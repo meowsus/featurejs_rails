@@ -1,8 +1,6 @@
 # FeaturejsRails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/featurejs_rails`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[Feature.js](http://featurejs.com/) packaged for the Rails Asset Pipeline
 
 ## Installation
 
@@ -22,18 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this to your JavaScript manifest file:
 
-## Development
+```js
+//= require featurejs_rails/feature
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+or, for the pre-minified version, add:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```js
+//= require featurejs_rails/feature.min
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/featurejs_rails.
+This is a Rails Asset Pipeline wrapper gem for the [Feature.js](http://featurejs.com/) library. Any issues found with the library itself should be reported on GitHub at https://github.com/viljamis/feature.js
 
+For any other specifically pertaining to this wrapper, bug reports and pull requests are welcome on GitHub at https://github.com/meowsus/featurejs_rails.
 
 ## License
 
